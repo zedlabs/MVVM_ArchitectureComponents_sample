@@ -25,7 +25,7 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
         repository.delete(user)
     }
 
-    fun deleteAllNotes() {
+    fun deleteAllUsers() {
         repository.deleteAllUsers()
     }
     fun getAllUsers() : LiveData<List<User>>{

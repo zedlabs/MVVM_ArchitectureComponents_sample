@@ -26,6 +26,9 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserHolder>() {
         this.users = users
         notifyDataSetChanged()
     }
+    fun getUserAt(position: Int) : User{
+        return users[position]
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder {
 
